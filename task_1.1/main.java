@@ -3,6 +3,6 @@ public class Main {
         String name = "Сергей";
         String city = "Москва";
         int age = 42;
-        System.out.println("Hello "+name+" "+city+" "+age+"");
+        System.out.println("Hello "+name+" "+city+" "+age+" лет");
     }
 }
