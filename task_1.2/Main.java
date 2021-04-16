@@ -8,6 +8,6 @@ public class Main {
         int c = (a + b);
         int d = (a - b);
         System.out.println(""+b+" "+plus+" "+a+" "+equally+" "+c+"");
-        System.out.println(""+b+" "+minus+" "+a+" "+equally+" "+d+"");
+        System.out.println(""+a+" "+minus+" "+b+" "+equally+" "+d+"");
     }
 }
