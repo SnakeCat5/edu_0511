@@ -1,13 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        String plus = "плюс";
-        String minus = "минус";
-        String equally = "равно";
         int a = 3;
         int b = 2;
-        int c = (a + b);
-        int d = (a - b);
-        System.out.println(""+b+" "+plus+" "+a+" "+equally+" "+c+"");
-        System.out.println(""+a+" "+minus+" "+b+" "+equally+" "+d+"");
+
+        /*System.out.print("два");/*
+        */System.out.print(b);/*
+        */System.out.print(" плюс ");/*
+        System.out.print(" минус ");
+        */System.out.print(a);/*
+        System.out.print("три");
+        */System.out.print(" равно ");/*
+        System.out.print(" будет ");
+        System.out.print("пять");*/
+        System.out.print(a + b);
     }
 }
