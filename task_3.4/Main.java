@@ -1,12 +1,20 @@
-/*
-Задание: Сделайте функцию, которая параметрами принимает 2 числа. Если их сумма больше 10 - пусть функция вернет true, а если нет - false.
-
-*/
-
-
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        try {
+            Scanner scan = new Scanner(System.in);
+            System.out.print("Введите число a: ");
+            int a = scan.nextInt();
+            System.out.print("Введите число b: ");
+            int b = scan.nextInt();
+            if (a+b>10 ) {
+                System.out.println(true);
+            } else {
+                System.out.println(false);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Введенный элемент не являеться числом") ;
+        }
     }
 }
