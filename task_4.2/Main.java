@@ -10,15 +10,46 @@
 •	У класса должен быть сеттер для переменной age.
 •	У класса должен быть геттер для переменной age.
 */
+public class Dog<age> {
+    public static int age;
+    private static String name;
 
 
-public class Main {
-    public static void main(String[] args) {
+    Dog() {
+        this(getName(),age);
+    }
+
+    Dog(String name, int age ) {
+        this.age = age;
+        this.setName(name);
+    }
+
+    public static String getName() {
+        return name;
+    }
+
+    public static void setName(String name) {
+        name = name;
+    }
+
+    public class Dog {
+        public String name;
+        public int age;//добавьте переменные класса тут
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
 
     }
 }
-
-public class Dog {
-    //напишите тут ваш код
-}
-
