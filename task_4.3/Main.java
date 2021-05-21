@@ -17,19 +17,45 @@
 
 public class Main {
     public static void main(String[] args) {
+        Кот кузя = new Кот();
+        кузя.возраст = 3;
+        кузя.сила = 2;
+        кузя.вес = 5;
+        Кот пушок = new Кот();
+        пушок.возраст = 3;
+        пушок.сила = 1;
+        пушок.вес = 1;
 
+        кузя.бьет(пушок);
+        пушок.бьет(кузя);
+        System.out.println((кузя.бьет(пушок)));
+        System.out.println((пушок.бьет(кузя)));
     }
 }
 
-class Cat {
-    public int age;
-    public int weight;
-    public int strength;
+class Кот {
+    public int возраст;
+    public int вес;
+    public int сила;
 
-    public Cat() {
+    public Кот() {
     }
-
-    public boolean fight(Cat anotherCat) {
-        //напишите тут ваш код
+    public boolean бьет(Кот другойКот) {
+        int win;
+        win = 0;
+        if (this.возраст > другойКот.возраст) {
+            win++;
+        }
+        if (this.вес > другойКот.вес) {
+            win++;
+        }
+        if (this.сила > другойКот.сила) {
+            win++;
+        }
+        if (win > 2)
+            return true;
+        if (win == 0)
+            return false;
+        return true;
     }
 }
